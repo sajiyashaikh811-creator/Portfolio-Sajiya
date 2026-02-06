@@ -52,68 +52,34 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: "RedBus - Mobile App UI Design",
-      description: "A beautiful mobile app interface designed in Figma featuring modern UI/UX principles, clean layouts, and intuitive user experience for mobile devices.",
-      image: "/Screenshot 2026-02-05 114428.png",
+      title: "Gozoop - Mobile App UI Design",
+      description: "A comprehensive mobile app UI design for a digital marketing platform, showcasing modern design patterns, intuitive navigation, and engaging user interface elements.",
+      image: "/gozoop.png",
       category: "design",
       technologies: ["Figma", "UI/UX Design", "Mobile Design", "Prototyping"],
-      liveUrl: "/Screenshot 2026-02-05 114428.png",
+      liveUrl: "/gozoop.png",
       githubUrl: "#",
       featured: true,
       isFigmaDesign: true
     },
     {
       id: 3,
-      title: "Feminine Portfolio Design",
-      description: "A collection of elegant and feminine portfolio designs for creative professionals, featuring soft gradients and beautiful animations.",
-      image: "/placeholder-profile.svg",
-      category: "design",
-      technologies: ["Figma", "Adobe XD", "CSS3", "JavaScript"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      id: 4,
-      title: "Wellness Mobile App",
-      description: "A React Native mobile application for wellness tracking, meditation, and self-care with beautiful, calming interface design.",
-      image: "/placeholder-profile.svg",
-      category: "mobile",
-      technologies: ["React Native", "Firebase", "Node.js"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      id: 5,
-      title: "Creative Agency Website",
-      description: "Modern website for a creative agency with stunning animations, portfolio showcase, and interactive elements.",
-      image: "/placeholder-profile.svg",
+      title: "Canva Clone",
+      description: "A web-based design tool clone built with HTML, CSS, and Tailwind CSS, featuring a clean interface and responsive design for creating visual content.",
+      image: "/canva.png",
       category: "web",
-      technologies: ["Next.js", "Framer Motion", "GSAP", "Tailwind"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: true
-    },
-    {
-      id: 6,
-      title: "Fashion Brand Identity",
-      description: "Complete brand identity design for a sustainable fashion brand, including logo, color palette, and marketing materials.",
-      image: "/placeholder-profile.svg",
-      category: "design",
-      technologies: ["Illustrator", "Photoshop", "InDesign"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
+      technologies: ["HTML", "CSS", "Tailwind"],
+      liveUrl: "https://github.com/sajiyashaikh811-creator/canva-clone.git",
+      githubUrl: "https://github.com/sajiyashaikh811-creator/canva-clone.git",
+      featured: true,
+      isFigmaDesign: false
     }
   ];
 
   const filters = [
     { id: 'all', label: 'All Projects', icon: '✨' },
-    { id: 'web', label: 'Web Development', icon: '💻' },
-    { id: 'ai', label: 'AI & ML', icon: '🤖' },
-    { id: 'design', label: 'UI/UX Design', icon: '🎨' },
-    { id: 'mobile', label: 'Mobile Apps', icon: '📱' }
+    { id: 'web', label: 'Canva', icon: '💻' },
+    { id: 'design', label: 'UI/UX Design', icon: '🎨' }
   ];
 
   const filteredProjects = activeFilter === 'all' 
@@ -125,15 +91,15 @@ export default function Projects() {
       {/* Dark Background Design */}
       <div className="absolute inset-0">
         {/* Geometric Patterns */}
-        <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-blue-500/10 to-green-500/10 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute bottom-32 right-32 w-40 h-40 bg-gradient-to-br from-green-500/10 to-blue-500/10 rounded-full blur-2xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute bottom-32 right-32 w-40 h-40 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-full blur-2xl animate-pulse" style={{animationDelay: '2s'}}></div>
         
         {/* Decorative Lines */}
         <svg className="absolute inset-0 w-full h-full opacity-5" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" style={{stopColor:'#3b82f6', stopOpacity:0.3}} />
-              <stop offset="100%" style={{stopColor:'#10b981', stopOpacity:0.3}} />
+              <stop offset="100%" style={{stopColor:'#06b6d4', stopOpacity:0.3}} />
             </linearGradient>
           </defs>
           <line x1="0%" y1="20%" x2="100%" y2="80%" stroke="url(#lineGrad)" strokeWidth="2"/>
@@ -148,7 +114,7 @@ export default function Projects() {
           <h2 className={`text-5xl md:text-6xl font-bold mb-6 text-white font-serif transform transition-all duration-1000 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
-            My <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">Projects</span>
+            My <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className={`text-xl text-gray-400 max-w-3xl mx-auto transform transition-all duration-1000 delay-200 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
@@ -167,7 +133,7 @@ export default function Projects() {
               onClick={() => setActiveFilter(filter.id)}
               className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 cursor-hover flex items-center gap-2 ${
                 activeFilter === filter.id
-                  ? 'bg-gradient-to-r from-blue-500 to-green-500 text-white shadow-lg'
+                  ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-lg'
                   : 'bg-slate-800 text-gray-400 hover:bg-slate-700 hover:text-white border border-slate-700'
               }`}
             >
@@ -188,10 +154,10 @@ export default function Projects() {
               style={{ transitionDelay: `${400 + index * 100}ms` }}
             >
               {/* Beautiful Gradient Border on Hover */}
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-green-500/20 to-blue-500/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm -z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-cyan-500/20 to-blue-500/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm -z-10"></div>
               {/* Project Image */}
               <div className="relative h-64 overflow-hidden cursor-zoom-in" onClick={() => project.isFigmaDesign && handleImageClick(project.image)}>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-green-400/20 z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-cyan-400/20 z-10"></div>
                 <Image
                   src={project.image}
                   alt={project.title}
@@ -218,7 +184,7 @@ export default function Projects() {
                         e.stopPropagation();
                         handleImageClick(project.image);
                       }}
-                      className="px-6 py-3 bg-gradient-to-r from-blue-500 to-green-500 text-white rounded-full font-semibold hover:from-blue-600 hover:to-green-600 transition-all duration-300 cursor-zoom-in flex items-center gap-2"
+                      className="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 cursor-zoom-in flex items-center gap-2"
                     >
                       <span>View Design</span>
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -226,26 +192,17 @@ export default function Projects() {
                       </svg>
                     </button>
                   ) : (
-                    <>
-                      <a
-                        href={project.liveUrl}
-                        className="px-6 py-3 bg-gradient-to-r from-blue-500 to-green-500 text-white rounded-full font-semibold hover:from-blue-600 hover:to-green-600 transition-all duration-300 cursor-hover flex items-center gap-2"
-                      >
-                        <span>Live Demo</span>
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-                        </svg>
-                      </a>
-                      <a
-                        href={project.githubUrl}
-                        className="px-6 py-3 bg-gray-700 text-white rounded-full font-semibold hover:bg-gray-600 transition-all duration-300 cursor-hover flex items-center gap-2"
-                      >
-                        <span>Code</span>
-                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                      </a>
-                    </>
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-full font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 cursor-hover flex items-center gap-2"
+                    >
+                      <span>Source Code</span>
+                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                      </svg>
+                    </a>
                   )}
                 </div>
 
@@ -254,7 +211,7 @@ export default function Projects() {
 
               {/* Project Content */}
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-3 font-serif group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-green-400 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+                <h3 className="text-2xl font-bold text-white mb-3 font-serif group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-cyan-400 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                   {project.title}
                 </h3>
                 <p className="text-gray-400 mb-6 leading-relaxed">
@@ -266,7 +223,7 @@ export default function Projects() {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 bg-slate-700 text-gray-300 rounded-full text-sm font-medium hover:bg-gradient-to-r hover:from-blue-500/20 hover:to-green-500/20 hover:text-white transition-all duration-300 cursor-hover"
+                      className="px-3 py-1 bg-slate-700 text-gray-300 rounded-full text-sm font-medium hover:bg-gradient-to-r hover:from-blue-500/20 hover:to-cyan-500/20 hover:text-white transition-all duration-300 cursor-hover"
                     >
                       {tech}
                     </span>
@@ -286,7 +243,7 @@ export default function Projects() {
           </p>
           <a
             href="/contact"
-            className="px-8 py-4 bg-gradient-to-r from-blue-500 to-green-500 text-white font-semibold text-lg rounded-full hover:from-blue-600 hover:to-green-600 transition-all duration-300 cursor-hover transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/30 shadow-lg flex items-center gap-2 mx-auto w-fit"
+            className="px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold text-lg rounded-full hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 cursor-hover transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/30 shadow-lg flex items-center gap-2 mx-auto w-fit"
           >
             <span>Let's Create Together</span>
             <span>✨</span>

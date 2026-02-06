@@ -105,7 +105,7 @@ export default function Skills() {
       {/* Simple Background */}
       <div className="absolute inset-0">
         <div className="absolute top-20 right-20 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-32 left-32 w-40 h-40 bg-green-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-32 left-32 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -114,7 +114,7 @@ export default function Skills() {
           <h2 className={`text-5xl md:text-6xl font-bold text-white mb-6 transform transition-all duration-1000 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
-            My <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">Skills</span>
+            My <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Skills</span>
           </h2>
           <p className={`text-xl text-gray-400 max-w-3xl mx-auto transform transition-all duration-1000 delay-200 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
