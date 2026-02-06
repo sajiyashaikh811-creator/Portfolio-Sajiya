@@ -121,15 +121,15 @@ export default function Projects() {
     : projects.filter(project => project.category === activeFilter);
 
   return (
-    <section id="projects" className="py-24 px-6 bg-gradient-to-br from-blue-50 via-white to-green-50 relative overflow-hidden">
-      {/* Modern Background Design */}
+    <section id="projects" className="py-24 px-6 bg-slate-900 relative overflow-hidden">
+      {/* Dark Background Design */}
       <div className="absolute inset-0">
         {/* Geometric Patterns */}
-        <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-blue-100/40 to-green-100/40 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute bottom-32 right-32 w-40 h-40 bg-gradient-to-br from-green-100/30 to-blue-100/30 rounded-full blur-2xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-blue-500/10 to-green-500/10 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute bottom-32 right-32 w-40 h-40 bg-gradient-to-br from-green-500/10 to-blue-500/10 rounded-full blur-2xl animate-pulse" style={{animationDelay: '2s'}}></div>
         
         {/* Decorative Lines */}
-        <svg className="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+        <svg className="absolute inset-0 w-full h-full opacity-5" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" style={{stopColor:'#3b82f6', stopOpacity:0.3}} />
@@ -145,12 +145,12 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className={`text-5xl md:text-6xl font-bold mb-6 text-gray-900 font-serif transform transition-all duration-1000 ${
+          <h2 className={`text-5xl md:text-6xl font-bold mb-6 text-white font-serif transform transition-all duration-1000 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
-            My <span className="bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">Projects</span>
+            My <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">Projects</span>
           </h2>
-          <p className={`text-xl text-gray-600 max-w-3xl mx-auto transform transition-all duration-1000 delay-200 ${
+          <p className={`text-xl text-gray-400 max-w-3xl mx-auto transform transition-all duration-1000 delay-200 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
             A showcase of my creative journey through beautiful digital experiences
@@ -168,7 +168,7 @@ export default function Projects() {
               className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 cursor-hover flex items-center gap-2 ${
                 activeFilter === filter.id
                   ? 'bg-gradient-to-r from-blue-500 to-green-500 text-white shadow-lg'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900'
+                  : 'bg-slate-800 text-gray-400 hover:bg-slate-700 hover:text-white border border-slate-700'
               }`}
             >
               <span>{filter.icon}</span>
@@ -182,7 +182,7 @@ export default function Projects() {
           {filteredProjects.map((project, index) => (
             <div
               key={project.id}
-              className={`group bg-white/95 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 cursor-hover border border-gray-100 transform hover:scale-105 ${
+              className={`group bg-slate-800 backdrop-blur-sm rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 cursor-hover border border-slate-700 transform hover:scale-105 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
               } ${project.featured ? 'md:col-span-2 lg:col-span-1' : ''}`}
               style={{ transitionDelay: `${400 + index * 100}ms` }}
@@ -254,10 +254,10 @@ export default function Projects() {
 
               {/* Project Content */}
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 font-serif group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-green-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+                <h3 className="text-2xl font-bold text-white mb-3 font-serif group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-green-400 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-400 mb-6 leading-relaxed">
                   {project.description}
                 </p>
 
@@ -266,7 +266,7 @@ export default function Projects() {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-medium hover:bg-gradient-to-r hover:from-blue-500/20 hover:to-green-500/20 hover:text-gray-900 transition-all duration-300 cursor-hover"
+                      className="px-3 py-1 bg-slate-700 text-gray-300 rounded-full text-sm font-medium hover:bg-gradient-to-r hover:from-blue-500/20 hover:to-green-500/20 hover:text-white transition-all duration-300 cursor-hover"
                     >
                       {tech}
                     </span>
@@ -281,12 +281,12 @@ export default function Projects() {
         <div className={`text-center mt-16 transform transition-all duration-1000 delay-1000 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
-          <p className="text-gray-600 text-lg mb-6">
+          <p className="text-gray-400 text-lg mb-6">
             Interested in working together on something beautiful?
           </p>
           <a
             href="/contact"
-            className="px-8 py-4 bg-gradient-to-r from-blue-500 to-green-500 text-white font-semibold text-lg rounded-full hover:from-blue-600 hover:to-green-600 transition-all duration-300 cursor-hover transform hover:scale-105 hover:shadow-2xl shadow-lg flex items-center gap-2 mx-auto w-fit"
+            className="px-8 py-4 bg-gradient-to-r from-blue-500 to-green-500 text-white font-semibold text-lg rounded-full hover:from-blue-600 hover:to-green-600 transition-all duration-300 cursor-hover transform hover:scale-105 hover:shadow-2xl hover:shadow-green-500/30 shadow-lg flex items-center gap-2 mx-auto w-fit"
           >
             <span>Let's Create Together</span>
             <span>✨</span>

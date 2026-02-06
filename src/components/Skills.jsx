@@ -55,10 +55,10 @@ export default function Skills() {
       level: 45, 
       icon: (
         <svg viewBox="0 0 24 24" className="w-12 h-12">
-          <path fill="#000000" d="M11.5725 0c-.1763 0-.3098.0013-.3584.0067-.0516.0053-.2159.021-.3636.0328-3.4088.3073-6.6017 2.1463-8.624 4.9728C1.1004 6.584.3802 8.3666.1082 10.255c-.0962.659-.108.8537-.108 1.7474s.012 1.0884.108 1.7476c.652 4.506 3.8591 8.2919 8.2087 9.6945.7789.2511 1.6.4223 2.5337.5255.3636.04 1.9354.04 2.299 0 1.6117-.1783 2.9772-.577 4.3237-1.2643.2065-.1056.2464-.1337.2183-.1573-.0188-.0139-.8987-1.1938-1.9543-2.62l-1.919-2.592-2.4047-3.5583c-1.3231-1.9564-2.4117-3.556-2.4211-3.556-.0094-.0026-.0187 1.5787-.0235 3.509-.0067 3.3802-.0093 3.5162-.0516 3.596-.061.115-.108.1618-.2064.2134-.075.0374-.1408.0445-.5429.0445h-.4570l-.0803-.0516c-.0516-.0336-.0939-.0822-.1213-.1201-.0146-.0212-.0094-1.3157.0188-4.2857l.0375-4.2488.0563-.0687c.0235-.0299.0797-.0895.1213-.1201.0635-.0445.1056-.0522.4739-.0522.4568 0 .5429.0156.6479.1077.0188.0156 1.5056 2.2544 3.3002 4.9758l6.2802 9.5198 1.9107-1.2643c2.651-1.7506 4.3985-4.4226 4.9749-7.6045.0962-.659.108-.8537.108-1.7474s-.012-1.0884-.108-1.7476C21.2982 5.2961 18.6522 1.8213 15.0109.2467 13.4718-.2487 11.7584-.3398 11.5725 0z"/>
+          <path fill="#FFFFFF" d="M11.5725 0c-.1763 0-.3098.0013-.3584.0067-.0516.0053-.2159.021-.3636.0328-3.4088.3073-6.6017 2.1463-8.624 4.9728C1.1004 6.584.3802 8.3666.1082 10.255c-.0962.659-.108.8537-.108 1.7474s.012 1.0884.108 1.7476c.652 4.506 3.8591 8.2919 8.2087 9.6945.7789.2511 1.6.4223 2.5337.5255.3636.04 1.9354.04 2.299 0 1.6117-.1783 2.9772-.577 4.3237-1.2643.2065-.1056.2464-.1337.2183-.1573-.0188-.0139-.8987-1.1938-1.9543-2.62l-1.919-2.592-2.4047-3.5583c-1.3231-1.9564-2.4117-3.556-2.4211-3.556-.0094-.0026-.0187 1.5787-.0235 3.509-.0067 3.3802-.0093 3.5162-.0516 3.596-.061.115-.108.1618-.2064.2134-.075.0374-.1408.0445-.5429.0445h-.4570l-.0803-.0516c-.0516-.0336-.0939-.0822-.1213-.1201-.0146-.0212-.0094-1.3157.0188-4.2857l.0375-4.2488.0563-.0687c.0235-.0299.0797-.0895.1213-.1201.0635-.0445.1056-.0522.4739-.0522.4568 0 .5429.0156.6479.1077.0188.0156 1.5056 2.2544 3.3002 4.9758l6.2802 9.5198 1.9107-1.2643c2.651-1.7506 4.3985-4.4226 4.9749-7.6045.0962-.659.108-.8537.108-1.7474s-.012-1.0884-.108-1.7476C21.2982 5.2961 18.6522 1.8213 15.0109.2467 13.4718-.2487 11.7584-.3398 11.5725 0z"/>
         </svg>
       ),
-      color: "from-gray-700 to-black",
+      color: "from-gray-400 to-white",
       bgColor: "bg-gray-50"
     },
     { 
@@ -101,129 +101,72 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-24 px-6 bg-gradient-to-br from-indigo-50 via-white to-purple-50 relative overflow-hidden">
-      {/* Creative Background Elements */}
+    <section id="skills" className="py-24 px-6 bg-slate-900 relative overflow-hidden">
+      {/* Simple Background */}
       <div className="absolute inset-0">
-        {/* Floating Orbs */}
-        <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-pink-200/40 to-purple-200/40 rounded-full blur-2xl animate-pulse"></div>
-        <div className="absolute bottom-32 right-16 w-40 h-40 bg-gradient-to-br from-blue-200/30 to-cyan-200/30 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-gradient-to-br from-green-200/50 to-emerald-200/50 rounded-full blur-xl animate-pulse" style={{animationDelay: '1s'}}></div>
-        
-        {/* Geometric Shapes */}
-        <div className="absolute top-40 right-32 w-16 h-16 bg-gradient-to-br from-yellow-300/30 to-orange-300/30 rotate-45 animate-spin opacity-60" style={{animationDuration: '20s'}}></div>
-        <div className="absolute bottom-40 left-32 w-12 h-12 bg-gradient-to-br from-indigo-300/40 to-purple-300/40 rounded-lg animate-bounce opacity-50"></div>
+        <div className="absolute top-20 right-20 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-32 left-32 w-40 h-40 bg-green-500/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-20">
-          <h2 className={`text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 mb-6 font-inter transform transition-all duration-1000 ${
+          <h2 className={`text-5xl md:text-6xl font-bold text-white mb-6 transform transition-all duration-1000 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
-            My Skills
+            My <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">Skills</span>
           </h2>
-          <p className={`text-xl text-gray-600 max-w-3xl mx-auto font-inter transform transition-all duration-1000 delay-200 ${
+          <p className={`text-xl text-gray-400 max-w-3xl mx-auto transform transition-all duration-1000 delay-200 ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
-            A creative showcase of my technical expertise and design capabilities
+            Technologies and tools I work with
           </p>
         </div>
 
-        {/* Skills Hexagon Grid */}
-        <div className="flex flex-wrap justify-center gap-8 mb-16">
+        {/* Skills Grid - Dark Theme */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className={`group relative transform transition-all duration-700 hover:scale-110 ${
+              className={`group relative bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-500 border border-slate-700 transform hover:-translate-y-2 ${
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
               }`}
-              style={{ transitionDelay: `${300 + index * 150}ms` }}
+              style={{ transitionDelay: `${300 + index * 100}ms` }}
               onMouseEnter={() => setHoveredSkill(index)}
               onMouseLeave={() => setHoveredSkill(null)}
             >
-              {/* Hexagon Container */}
-              <div className="relative w-48 h-48">
-                {/* Hexagon Background */}
-                <div className={`absolute inset-0 ${skill.bgColor} rounded-3xl shadow-xl group-hover:shadow-2xl transition-all duration-500 transform group-hover:rotate-6 group-hover:bg-white/80`}>
-                  {/* Gradient Border */}
-                  <div className={`absolute inset-1 bg-gradient-to-br ${skill.color} rounded-3xl opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
-                </div>
-                
-                {/* Content */}
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 z-10">
-                  {/* Icon */}
-                  <div className="mb-4 transform group-hover:scale-125 transition-transform duration-500">
-                    {skill.icon}
-                  </div>
-                  
-                  {/* Skill Name */}
-                  <h3 className="text-xl font-bold text-gray-800 mb-3 text-center group-hover:text-gray-900 transition-colors duration-300">
-                    {skill.name}
-                  </h3>
-                  
-                  {/* Circular Progress */}
-                  <div className="relative w-16 h-16">
-                    <svg className="w-16 h-16 transform -rotate-90" viewBox="0 0 64 64">
-                      {/* Background Circle */}
-                      <circle
-                        cx="32"
-                        cy="32"
-                        r="28"
-                        stroke="currentColor"
-                        strokeWidth="4"
-                        fill="none"
-                        className="text-gray-200"
-                      />
-                      {/* Progress Circle */}
-                      <circle
-                        cx="32"
-                        cy="32"
-                        r="28"
-                        stroke="url(#gradient-${index})"
-                        strokeWidth="4"
-                        fill="none"
-                        strokeLinecap="round"
-                        strokeDasharray={`${2 * Math.PI * 28}`}
-                        strokeDashoffset={`${2 * Math.PI * 28 * (1 - (isVisible ? skill.level / 100 : 0))}`}
-                        className="transition-all duration-1500 ease-out"
-                        style={{ transitionDelay: `${500 + index * 100}ms` }}
-                      />
-                    </svg>
-                    
-                    {/* Percentage Text */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className={`text-sm font-bold bg-gradient-to-r ${skill.color} bg-clip-text text-transparent`}>
-                        {skill.level}%
-                      </span>
-                    </div>
-                    
-                    {/* SVG Gradients */}
-                    <svg className="absolute inset-0 w-0 h-0">
-                      <defs>
-                        <linearGradient id={`gradient-${index}`} x1="0%" y1="0%" x2="100%" y2="100%">
-                          <stop offset="0%" stopColor={skill.color.includes('cyan') ? '#22d3ee' : 
-                                                       skill.color.includes('yellow') ? '#facc15' :
-                                                       skill.color.includes('gray') ? '#374151' :
-                                                       skill.color.includes('orange') ? '#fb923c' :
-                                                       skill.color.includes('blue') ? '#60a5fa' :
-                                                       '#a855f7'} />
-                          <stop offset="100%" stopColor={skill.color.includes('cyan') ? '#3b82f6' : 
-                                                         skill.color.includes('yellow') ? '#f97316' :
-                                                         skill.color.includes('gray') ? '#000000' :
-                                                         skill.color.includes('orange') ? '#ef4444' :
-                                                         skill.color.includes('blue') ? '#6366f1' :
-                                                         '#ec4899'} />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
-                </div>
-                
-                {/* Hover Glow Effect */}
-                {hoveredSkill === index && (
-                  <div className={`absolute inset-0 bg-gradient-to-br ${skill.color} rounded-3xl opacity-5 blur-xl animate-pulse`}></div>
-                )}
+              {/* Icon */}
+              <div className="flex justify-center mb-4 transform group-hover:scale-110 transition-transform duration-300">
+                {skill.icon}
               </div>
+              
+              {/* Skill Name */}
+              <h3 className="text-center text-sm font-bold text-gray-200 mb-3">
+                {skill.name}
+              </h3>
+              
+              {/* Progress Bar */}
+              <div className="relative w-full h-2 bg-slate-700 rounded-full overflow-hidden">
+                <div 
+                  className={`h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1500 ease-out`}
+                  style={{ 
+                    width: isVisible ? `${skill.level}%` : '0%',
+                    transitionDelay: `${500 + index * 100}ms`
+                  }}
+                ></div>
+              </div>
+              
+              {/* Percentage */}
+              <div className="text-center mt-2">
+                <span className={`text-xs font-bold bg-gradient-to-r ${skill.color} bg-clip-text text-transparent`}>
+                  {skill.level}%
+                </span>
+              </div>
+              
+              {/* Hover Effect */}
+              {hoveredSkill === index && (
+                <div className={`absolute inset-0 bg-gradient-to-br ${skill.color} rounded-2xl opacity-5 pointer-events-none`}></div>
+              )}
             </div>
           ))}
         </div>
